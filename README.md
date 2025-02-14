@@ -1,48 +1,41 @@
-# Predictive-Maintenance-for-Industrial-Equipment-Using-IoT-Data
+# IoT Sensor Data Analysis for Equipment Failure Prediction
+
+[![Open in Colab](https://colab.research.google.com/drive/1_Ur1mK63bhThaYx_Uhdhb7mFysLFrG1U#scrollTo=pQGXxmu52Chs)
 
 
-**Project Overview**:  
-This project analyzes IoT sensor data from industrial equipment to predict failures and optimize maintenance schedules, reducing downtime costs by **25%** ($1.1M annual savings). It combines anomaly detection, predictive modeling, and actionable dashboards.
+## Overview
+An end-to-end data analysis project predicting industrial equipment failures using IoT sensor data from semiconductor manufacturing processes. Implements machine learning to enable proactive maintenance planning.
 
-[Download Dataset](https://www.kaggle.com/datasets/shivamb/machine-predictive-maintenance-classification)
-[View the Colab Notebook](https://colab.research.google.com/drive/19fA5s2EYQ9JeNwQ6svJBDHN0rVi0MLMS#scrollTo=B1pxtpuy8Apu)
+## Problem Statement
+- **Challenge**: 6% failure rate in semiconductor equipment causing unplanned downtime
+- **Solution**: Developed predictive model identifying failures 24-48hrs in advance
+- **Impact**: Reduced simulated maintenance costs by 18% through early detection
 
----
+## Dataset
+**SECOM Semiconductor Manufacturing Data**  
+- Source: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/179/secom)
+- Samples: 1,567 equipment records
+- Features: 591 IoT sensors
+- Target: Binary classification (Pass/Fail)
 
-## 🚀 Features
-- **EDA & Anomaly Detection**: Identified key failure patterns and abnormal sensor readings.
-- **Predictive Modeling**: XGBoost model achieves **92% precision** in failure prediction.
-- **Cost Optimization**: Simulated maintenance scenarios to reduce labor costs by **20%**.
-- **Dashboard**: Real-time Tableau dashboard for equipment health monitoring.
+## Tech Stack
+- **Data Processing**: Python, Pandas, NumPy
+- **Machine Learning**: scikit-learn, imbalanced-learn
+- **Visualization**: Matplotlib, Seaborn
+- **Deployment**: Flask, Docker
 
----
+## Key Features
+✅ Missing value handling (70% completeness threshold)  
+✅ Correlation-based feature selection (173 features removed)  
+✅ Class imbalance mitigation (SMOTE oversampling)  
+✅ Hyperparameter tuning (GridSearchCV)  
+✅ Model explainability (Feature importance analysis)
 
-## 📊 Results
-
-### **Model Performance**
-| Metric               | XGBoost | Random Forest |
-|----------------------|---------|---------------|
-| Precision            | 92%     | 89%           |
-| Recall               | 90%     | 85%           |
-| ROC-AUC Score        | 0.99    | 0.97          |
-| F1-Score             | 0.91    | 0.87          |
-
-### **Business Impact**
-- **Downtime Reduction**: 25% fewer unplanned outages, saving **$1.1M/year**.
-- **Repair Cost Savings**: 40% reduction in reactive repairs through early anomaly detection.
-- **Labor Efficiency**: Optimized resource allocation cut labor costs by **20%**.
-
-### **Visualizations**
-![Anomaly Detection](images/anomalies.png)  
-*Anomalies detected in torque and temperature sensor data (Isolation Forest).*
-
-![Feature Importance](images/feature_importance.png)  
-*Key drivers of equipment failure (Torque and Tool Wear account for 70% of impact).*
-
-![Confusion Matrix](images/confusion_matrix.png)  
-*XGBoost confusion matrix showing 92% precision in failure prediction.*
-
----
+## Installation
+```bash
+git clone https://github.com/yourusername/predictive-maintenance.git
+cd predictive-maintenance
+pip install -r requirements.txt
 
 ## 🛠️ Installation
 1. **Clone the repository**:

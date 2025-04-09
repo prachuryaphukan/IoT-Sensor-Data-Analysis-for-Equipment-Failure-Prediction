@@ -122,14 +122,4 @@ Cost Assumption Sensitivity:
 
 10% error in 40 k / failureestimate →1.35M impact Regular cost model updates crucial
 
-## Installation
-```bash
-git clone https://github.com/prachuryaphukan/IoT-Sensor-Data-Analysis-for-Equipment-Failure-Prediction.git
-cd IoT-Sensor-Data-Analysis-for-Equipment-Failure-Prediction
-pip install -r requirements.txt
 
-## 🛠️ Installation
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/prachuryaphukan/predictive-maintenance.git
-   cd predictive-maintenance

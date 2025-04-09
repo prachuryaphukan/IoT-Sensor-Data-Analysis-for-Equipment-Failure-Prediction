@@ -124,7 +124,7 @@ Cost Assumption Sensitivity:
 
 ## Installation
 ```bash
-git clone https://github.com/yourusername/IoT-Sensor-Data-Analysis-for-Equipment-Failure-Prediction.git
+git clone https://github.com/prachuryaphukan/IoT-Sensor-Data-Analysis-for-Equipment-Failure-Prediction.git
 cd IoT-Sensor-Data-Analysis-for-Equipment-Failure-Prediction
 pip install -r requirements.txt
 
